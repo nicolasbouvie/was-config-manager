@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSphere Configuration Manager</title>
+</head>
+<body>
+    <h1>Installed Applications</h1>
+    <ul th:each="app : ${apps}">
+        <li th:text="${app.name}">Application Name</li>
+    </ul>
+</body>
+</html>
