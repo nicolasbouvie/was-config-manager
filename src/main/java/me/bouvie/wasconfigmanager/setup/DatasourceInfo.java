@@ -8,7 +8,6 @@ import lombok.Setter;
 public class DatasourceInfo extends AbstractSetupInfo {
     private String name;
     private String jndi;
-    private String helperClassName;
     private String description;
     private JDBCProviderInfo jdbcProviderInfo;
     private AuthInfo authInfo;
