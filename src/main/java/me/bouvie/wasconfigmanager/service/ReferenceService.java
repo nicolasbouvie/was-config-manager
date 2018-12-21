@@ -21,7 +21,7 @@ public class ReferenceService {
         props.setProperty(AdminClient.CONNECTOR_PORT, "8880");
         props.setProperty(AdminClient.CONNECTOR_SECURITY_ENABLED, "true");
         props.setProperty(AdminClient.USERNAME, "wsadmin");
-        props.setProperty(AdminClient.PASSWORD, "wsadmin");
+        props.setProperty(AdminClient.PASSWORD, "0XZaJvDj");
 
         return AdminClientFactory.createAdminClient(props);
     }

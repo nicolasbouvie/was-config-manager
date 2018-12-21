@@ -1,5 +1,10 @@
 # was-config-manager
 
+Install admin-client:
+```commandline
+mvn install:install-file -Dfile=admin-client-7.0.0.jar -DgroupId=com.ibm.ws -DartifactId=admin-client -Dversion=7.0.0 -Dpackaging=jar
+```
+
 Configuration sample:
 
 [PUT] /configure
