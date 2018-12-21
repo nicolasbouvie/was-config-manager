@@ -1,4 +1,4 @@
-package me.bouvie.wasconfigmanager.dto;
+package me.bouvie.wasconfigmanager.application;
 
 import lombok.Getter;
 import lombok.Setter;

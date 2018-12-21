@@ -1,16 +1,16 @@
 package me.bouvie.wasconfigmanager.controller;
 
-import me.bouvie.wasconfigmanager.service.WebSphereService;
+import me.bouvie.wasconfigmanager.service.ApplicationService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class WebSphereController {
+public class ApplicationController {
 
-    private WebSphereService service;
+    private ApplicationService service;
 
-    public WebSphereController(WebSphereService service) {
+    public ApplicationController(ApplicationService service) {
         this.service = service;
     }
 
