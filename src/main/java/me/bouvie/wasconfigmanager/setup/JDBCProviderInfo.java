@@ -1,14 +1,13 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class JDBCProviderInfo extends AbstractSetupInfo {
-    private String name;
     private String implementationClassName;
     private List<String> classpath;
 }

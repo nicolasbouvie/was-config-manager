@@ -13,7 +13,7 @@ Configuration sample:
   {
     "@type":"Auth",
     "@id":"4283fe80-ba13-4b55-a082-515e714ed932",
-    "alias":"dbUser",
+    "name":"dbUser",
     "username":"user",
     "password":"password",
     "description":"Password for database"
@@ -21,7 +21,7 @@ Configuration sample:
   {
     "@type":"Auth",
     "@id":"80db9d0b-5a85-4319-983d-a1171a5048cd",
-    "alias":"EMS",
+    "name":"EMS",
     "username":"user",
     "password":"password",
     "description":"Password for ems"

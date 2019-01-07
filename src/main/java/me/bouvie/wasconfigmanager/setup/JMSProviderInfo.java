@@ -1,14 +1,13 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class JMSProviderInfo extends AbstractSetupInfo {
-    private String name;
     private List<String> classpath;
     private String externalInitialContextFactory;
     private String externalProviderURL;

@@ -1,12 +1,11 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true, of = {"jndiName"})
 public class WorkManagerInfo extends AbstractSetupInfo {
-    private String name;
     private String jndiName;
     private String description;
     private Integer workTimeout;
@@ -18,3 +17,4 @@ public class WorkManagerInfo extends AbstractSetupInfo {
     private Integer threadPriority;
     private Boolean growable;
 }
+

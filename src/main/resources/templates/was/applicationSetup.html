@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Setup</title>
+</head>
+<body>
+<h1>Application Setup</h1>
+<form method="POST" action="/configuration">
+    <label for="namePattern">Name pattern</label>
+    <input id="namePattern" type="text" th:value="${namePattern}" value="app-name-.*\.ear"/>
+    <br/>
+    <label for="configuration">Configuration</label>
+    <textarea id="configuration" th:text="${configuration}">
+[
+  {
+    "@type":"Auth",
+    "@id":"4283fe80-ba13-4b55-a082-515e714ed932",
+    "name":"config"
+  }
+]
+    </textarea>
+    <br/>
+    <input type="submit" value="Save"/>
+</form>
+</body>
+</html>

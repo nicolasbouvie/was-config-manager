@@ -1,12 +1,11 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class ListenerPortInfo extends AbstractSetupInfo {
-    private String name;
     private String initialState;
     private String description;
     private JMSConnectionFactoryInfo connectionFactory;

@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 
@@ -22,6 +24,9 @@ import java.io.Serializable;
     @JsonSubTypes.Type(value = SharedLibInfo.class, name = "SharedLib"),
     @JsonSubTypes.Type(value = WorkManagerInfo.class, name = "WorkManager")
 
-}
-)public abstract class AbstractSetupInfo implements Serializable {
+})
+@Data
+@EqualsAndHashCode(of = {"name"})
+public abstract class AbstractSetupInfo implements Serializable {
+    private String name;
 }

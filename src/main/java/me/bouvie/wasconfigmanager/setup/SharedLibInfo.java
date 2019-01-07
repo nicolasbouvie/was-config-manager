@@ -1,14 +1,13 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true)
 public class SharedLibInfo extends AbstractSetupInfo {
-    private String name;
     private String description;
     private List<String> nativePath;
     private List<String> classpath;

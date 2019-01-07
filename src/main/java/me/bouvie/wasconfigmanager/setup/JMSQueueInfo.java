@@ -1,12 +1,11 @@
 package me.bouvie.wasconfigmanager.setup;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-@Getter
-@Setter
+@Data
+@EqualsAndHashCode(callSuper = true, of = {"jndi"})
 public class JMSQueueInfo extends AbstractSetupInfo {
-    private String name;
     private String jndi;
     private String externalJndi;
     private JMSProviderInfo providerInfo;
