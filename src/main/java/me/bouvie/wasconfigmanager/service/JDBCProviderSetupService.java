@@ -30,6 +30,7 @@ public class JDBCProviderSetupService implements ComponentSetupService<JDBCProvi
         authAliasAttrs.add(new Attribute("name", providerInfo.getName()));
         authAliasAttrs.add(new Attribute("implementationClassName", providerInfo.getImplementationClassName()));
         authAliasAttrs.add(new Attribute("classpath", providerInfo.getClasspath()));
+        authAliasAttrs.add(new Attribute("providerType", providerInfo.getType()));
 
         return config.createConfigData(session, scope, "JDBCProvider", "JDBCProvider", authAliasAttrs);
     }
