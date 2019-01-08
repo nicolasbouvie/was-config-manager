@@ -10,4 +10,5 @@ import java.util.List;
 public class JDBCProviderInfo extends AbstractSetupInfo {
     private String implementationClassName;
     private List<String> classpath;
+    private String type;
 }
